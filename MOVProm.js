@@ -1,7 +1,7 @@
 const questions = [
     {
         question: "Q1/12: Đồng nghiệp của bạn cãi nhau với sếp thì bạn sẽ cảm thấy thế nào ?",
-        image: "images/1.gif",
+        image: "images/1.png",
         answers: {
             T: {
                 text: "Khuyên bạn nên nghỉ việc rồi ra về.",
@@ -15,7 +15,7 @@ const questions = [
     },
     {
         question: "Q2/12: Sau một ngày làm việc dài với hàng tá drama, bạn quyết định đi xem xiếc. Bạn muốn đi với ai?",
-        image: "images/2.gif",
+        image: "images/2.png",
         answers: {
             E: {
                 text: "Đi với bạn bè",
@@ -29,7 +29,7 @@ const questions = [
     },
     {
         question: "Q3/12: Trước khi đi xem xiếc, bạn chuẩn bị như thế nào?",
-        image: "images/3.gif",
+        image: "images/3.png",
         answers: {
             J: {
                 text: "Kiểm tra kỹ vé, sắp xếp lịch trình và đến sớm để đảm bảo có chỗ ngồi tốt.",
@@ -43,7 +43,7 @@ const questions = [
     },
     {
         question: "Q4/12: Bạn được phát một bản đồ nhỏ hướng dẫn lối đi trong rạp xiếc. Bạn sẽ làm gì?",
-        image: "images/4.gif",
+        image: "images/4.png",
         answers: {
             J: {
                 text: "Làm theo bản đồ từ A đến Z để không bỏ sót chỗ nào.",
@@ -57,7 +57,7 @@ const questions = [
     },
     {
         question: "Q5/12: Bạn thấy quầy đồ ăn và bán “Bánh mì trí nhớ” và “Kẹo quay ngược thời gian”. Bạn sẽ chọn cái nào?",
-        image: "images/5.gif",
+        image: "images/5.png",
         answers: {
             F: {
                 text: "Bánh mì trí nhớ",
@@ -71,7 +71,7 @@ const questions = [
     },
     {
         question: "Q6/12: Bạn đang xếp hàng mua đồ ăn và thấy người phục vụ vô tình làm đổ cả túi đồ ăn lên quầy. Phản ứng của bạn sẽ như thế nào?",
-        image: "images/6.gif",
+        image: "images/6.png",
         answers: {
             J: {
                 text: "Hi vọng là họ dọn nhanh để tôi lấy đồ ăn.",
@@ -85,7 +85,7 @@ const questions = [
     },
     {
         question: "Q7/12: Bạn đang thưởng thức một món ăn nhẹ trong khi xem màn trình diễn xiếc. Đột nhiên, một con khỉ từ tiết mục xiếc vượt qua hàng rào an toàn, tiến đến gần bạn và bắt đầu ăn vụng đồ ăn của bạn. Bạn sẽ phản ứng như thế nào?",
-        image: "images/7.gif",
+        image: "images/7.png",
         answers: {
             E: {
                 text: "Chia sẻ đồ ăn của mình với con khỉ và chụp vài bức ảnh để lưu lại kỷ niệm.",
@@ -99,7 +99,7 @@ const questions = [
     },
     {
         question: "Q8/12: Giữa buổi biểu diễn, bỗng nhiên một trong những nghệ sĩ diễn xiếc bước xuống khán đài và kéo bạn lên sân khấu để tham gia vào một trò đùa. Bạn sẽ phản ứng như thế nào?",
-        image: "images/8.gif",
+        image: "images/8.png",
         answers: {
             E: {
                 text: "Nhảy lên sân khấu ngay lập tức.",
@@ -113,7 +113,7 @@ const questions = [
     },
     {
         question: "Q9/12: Bạn đang xem một màn trình diễn xiếc với một thủ thuật ảo thuật mới lạ. Thủ thuật kết thúc bằng việc một con voi “biến mất”. Bạn sẽ nghĩ gì về thủ thuật này?",
-        image: "images/9.gif",
+        image: "images/9.png",
         answers: {
             S: {
                 text: "Họ giấu con voi ở đâu thế?",
@@ -127,7 +127,7 @@ const questions = [
     },
     {
         question: "Q10/12: Bạn tình cờ thấy một màn biểu diễn cực kỳ cảm động về tình bạn giữa người huấn luyện và chú sư tử trong rạp xiếc. Cảm giác của bạn là gì?",
-        image: "images/10.gif",
+        image: "images/10.png",
         answers: {
             T: {
                 text: "Phân tích kỹ thuật huấn luyện chú sư tử",
@@ -142,7 +142,7 @@ const questions = [
     },
     {
         question: "Q11/12: Buổi trình diễn kết thúc bạn có suy nghĩ như thế nào?",
-        image: "images/11.gif",
+        image: "images/11.png",
         answers: {
             S: {
                 text: "Cảm động đến phát khóc vì nó quá hay.",
@@ -156,7 +156,7 @@ const questions = [
     },
     {
         question: "Q12/12: Bạn chợt tỉnh dâỵ với tiếng nhạc Vinahouse dưới nhà của mình?",
-        image: "images/12.gif",
+        image: "images/12.png",
         answers: {
             S: {
                 text: "Cảm thấy bực tức vì tiếng nhạc quá to",
@@ -170,7 +170,7 @@ const questions = [
     },
     {
         question: "Bạn sẽ làm gì tiếp theo?",
-        image: "images/13.gif",
+        image: "images/13.png",
         answers: {
             K: {
                 text: "Đi event Prom: Crescendo của MOV thui!!!",
