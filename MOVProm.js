@@ -334,6 +334,11 @@ function showResult() {
         resultTextContainer.innerHTML = ``;
         resultImage.src = "images/" + personalityData.image;
         resultImage.alt = `${personalityData.image} Image`;
+
+        // Add a slight delay to ensure the image is loaded before downloading
+        setTimeout(() => {
+            downloadResultImage();
+        }, 500);
     } else {
 
     }
@@ -357,39 +362,28 @@ function restartQuiz() {
 document.getElementById('restart-button').addEventListener('click', restartQuiz);
 
 function downloadResultImage() {
-    console.log('Download function called');
     const resultImage = document.getElementById('result-image');
-    console.log('Result image:', resultImage);
     if (resultImage && resultImage.src) {
-        console.log('Image source:', resultImage.src);
-        // Create a temporary anchor element
-        const downloadLink = document.createElement('a');
-        downloadLink.href = resultImage.src;
-        
-        // Extract the filename from the src
-        const filename = resultImage.src.split('/').pop();
-        
-        // Set the download attribute with the filename
-        downloadLink.download = filename;
-        
-        // Append to the body, click, and remove
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
+        const link = document.createElement('a');
+        link.href = resultImage.src;
+        link.download = 'MOV_Prom_Night_Result.png';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     } else {
         console.error('Result image not found or source not set');
     }
 }
 
 // Add event listener for the download button
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     const downloadButton = document.getElementById('download-button');
     if (downloadButton) {
         downloadButton.addEventListener('click', downloadResultImage);
     } else {
         console.error('Download button not found');
     }
-});
+});*/
 
 displayQuestion();
 
