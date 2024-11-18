@@ -18,11 +18,11 @@ const questions = [
         image: "images/2.png",
         answers: {
             E: {
-                text: "Đi với bạn bè",
+                text: "Đi với bạn bè.",
                 scores: { E: +1, I: 0 },
             },
             I: {
-                text: "Đi một mình thui",
+                text: "Đi một mình thui.",
                 scores: { E: 0, I: +1 },
             },
         },
@@ -60,11 +60,11 @@ const questions = [
         image: "images/5.png",
         answers: {
             F: {
-                text: "Bánh mì trí nhớ",
+                text: "Bánh mì trí nhớ.",
                 scores: { F: +1, T: 0 },
             },
             T: {
-                text: "Kẹo quay ngược thời gian",
+                text: "Kẹo quay ngược thời gian.",
                 scores: { F: 0, T: +1 },
             },
         },
@@ -130,11 +130,11 @@ const questions = [
         image: "images/10.png",
         answers: {
             T: {
-                text: "Phân tích kỹ thuật huấn luyện chú sư tử",
+                text: "Phân tích kỹ thuật huấn luyện chú sư tử.",
                 scores: { F: 0, T: +1 },
             },
             F: {
-                text: "Cảm thấy xúc động, muốn làm bạn với chú sư tử",
+                text: "Cảm thấy xúc động, muốn làm bạn với chú sư tử.",
                 scores: { F: +1, T: 0 },
             },
         },
