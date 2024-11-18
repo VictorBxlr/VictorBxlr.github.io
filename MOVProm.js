@@ -363,8 +363,11 @@ function downloadResultImage() {
         const downloadLink = document.createElement('a');
         downloadLink.href = resultImage.src;
         
-        // Set the download attribute with a filename
-        downloadLink.download = 'MOV_Prom_Night_Result.png';
+        // Extract the filename from the src
+        const filename = resultImage.src.split('/').pop();
+        
+        // Set the download attribute with the filename
+        downloadLink.download = filename;
         
         // Append to the body, click, and remove
         document.body.appendChild(downloadLink);
@@ -374,6 +377,14 @@ function downloadResultImage() {
         console.error('Result image not found or source not set');
     }
 }
+
+// Add event listener for the download button
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadButton = document.getElementById('download-button');
+    if (downloadButton) {
+        downloadButton.addEventListener('click', downloadResultImage);
+    }
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     const downloadButton = document.getElementById('download-button');
