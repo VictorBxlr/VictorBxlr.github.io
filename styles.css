@@ -224,6 +224,13 @@ question-image {
     object-fit: cover; /* To maintain aspect ratio */
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust this value to control spacing between buttons */
+    margin-top: 20px; /* Add some space above the button container */
+}
+
 .do-not-press-button {
     font-family: 'Open Sans', sans-serif;
     background-color: #f46b6b; /* Red */
