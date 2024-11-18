@@ -357,8 +357,11 @@ function restartQuiz() {
 document.getElementById('restart-button').addEventListener('click', restartQuiz);
 
 function downloadResultImage() {
+    console.log('Download function called');
     const resultImage = document.getElementById('result-image');
+    console.log('Result image:', resultImage);
     if (resultImage && resultImage.src) {
+        console.log('Image source:', resultImage.src);
         // Create a temporary anchor element
         const downloadLink = document.createElement('a');
         downloadLink.href = resultImage.src;
@@ -383,13 +386,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const downloadButton = document.getElementById('download-button');
     if (downloadButton) {
         downloadButton.addEventListener('click', downloadResultImage);
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const downloadButton = document.getElementById('download-button');
-    if (downloadButton) {
-        downloadButton.addEventListener('click', downloadResultImage);
+    } else {
+        console.error('Download button not found');
     }
 });
 
