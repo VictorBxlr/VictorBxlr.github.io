@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Q1/12: Đồng nghiệp của bạn cãi nhau với sếp thì bạn sẽ cảm thấy thế nào ?",
+        question: "Q1/12: Đồng nghiệp của bạn cãi nhau với sếp thì bạn sẽ cảm thấy thế nào?",
         image: "images/1.png",
         answers: {
             T: {
@@ -159,7 +159,7 @@ const questions = [
         image: "images/12.png",
         answers: {
             S: {
-                text: "Cảm thấy bực tức vì tiếng nhạc quá to",
+                text: "Cảm thấy bực tức vì tiếng nhạc quá to.",
                 scores: { S: +1, N: 0 },
             },
             N: {
