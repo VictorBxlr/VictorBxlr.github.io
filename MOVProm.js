@@ -331,10 +331,8 @@ function showResult() {
     //show result
     const personalityData = resultOptions[result];
     if (personalityData) {
-        resultTextContainer.innerHTML = `
-        `;
-
-        resultImage.src = "images/"+personalityData.image;
+        resultTextContainer.innerHTML = ``;
+        resultImage.src = "images/" + personalityData.image;
         resultImage.alt = `${personalityData.image} Image`;
     } else {
 
@@ -377,7 +375,6 @@ function downloadResultImage() {
     }
 }
 
-// Add event listener for the download button
 document.addEventListener('DOMContentLoaded', function() {
     const downloadButton = document.getElementById('download-button');
     if (downloadButton) {
