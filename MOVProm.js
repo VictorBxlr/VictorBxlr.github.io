@@ -358,25 +358,25 @@ function restartQuiz() {
 
 document.getElementById('restart-button').addEventListener('click', restartQuiz);
 
+// Add this function to your existing JavaScript file
 function downloadResultImage() {
     const resultImage = document.getElementById('result-image');
-    const imageUrl = resultImage.src;
-    
-    // Create a temporary anchor element
-    const downloadLink = document.createElement('a');
-    downloadLink.href = imageUrl;
-    
-    // Set the download attribute with a filename
-    downloadLink.download = 'MOV_Prom_Night_Result.png';
-    
-    // Append to the body, click, and remove
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+    if (resultImage && resultImage.src) {
+        // Create a temporary anchor element
+        const downloadLink = document.createElement('a');
+        downloadLink.href = resultImage.src;
+        
+        // Set the download attribute with a filename
+        downloadLink.download = 'MOV_Prom_Night_Result.png';
+        
+        // Append to the body, click, and remove
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    } else {
+        console.error('Result image not found or source not set');
+    }
 }
-
-// Add event listener to the download button
-document.getElementById('download-button').addEventListener('click', downloadResultImage);
 
 displayQuestion();
 
