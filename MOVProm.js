@@ -358,7 +358,6 @@ function restartQuiz() {
 
 document.getElementById('restart-button').addEventListener('click', restartQuiz);
 
-// Add this function to your existing JavaScript file
 function downloadResultImage() {
     const resultImage = document.getElementById('result-image');
     if (resultImage && resultImage.src) {
@@ -377,6 +376,14 @@ function downloadResultImage() {
         console.error('Result image not found or source not set');
     }
 }
+
+// Add event listener for the download button
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadButton = document.getElementById('download-button');
+    if (downloadButton) {
+        downloadButton.addEventListener('click', downloadResultImage);
+    }
+});
 
 displayQuestion();
 
