@@ -1,6 +1,6 @@
 body {
     font-family: 'Comfortaa', sans-serif;
-    background-color: #ffb997;
+    background-color: #fdf4d3;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -10,11 +10,6 @@ body {
     height: 1000;
     /*hight: 100vd;;*/
     
-}
-
-.logo {
-    max-width: 100%;
-    height: auto;
 }
 
 .dark {
