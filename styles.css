@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ffb997;
+    background-color: #ffe7db;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 20px;
-    background-color: #ffb997;
+    background-color: #ffe7db;
     color: #0b032d;
     padding: 20px;
     border-radius: 10px;
@@ -45,7 +45,7 @@ body {
     text-align: center;
     font-size: 20px;
     background-color: #843b62;
-    color: #ffb997;
+    color: #ffe7db;
     padding: 20px;
     border-radius: 10px;
    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
@@ -94,7 +94,7 @@ p1{
 #result {
     /*margin-top: 20px;*/
     padding: 10px;
-    background-color: #ffb997;
+    background-color: #ffe7db;
     /*border: 2px solid #ddd;
     border-radius: 5px;*/
     display: none;
@@ -201,7 +201,7 @@ question-image {
 
 .restart-button {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ffb997;
+    background-color: #ffe7db;
     border: none;
     color: rgb(0, 0, 0);
     padding: 15px 32px;
@@ -213,7 +213,7 @@ question-image {
 }
 
 .restart-button:hover {
-    background-color: #ffb997; 
+    background-color: #ffe7db; 
     color: rgb(132, 107, 107);
 }
 
